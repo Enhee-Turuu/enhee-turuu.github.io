@@ -1,4 +1,4 @@
-// Header에 페이지 아래로 스크롤시 다크 스타일링 적용(추가 & 삭제)
+// Header에 페이지 아래로 스크롤시 다크 스타일링 적용(추가 & 삭제)**
 const header = document.querySelector(".header");
 const headerHeight = header.offsetHeight;
 document.addEventListener("scroll", () => {
@@ -10,9 +10,19 @@ document.addEventListener("scroll", () => {
   }
 });
 
-// Home 섹션을 아래로 스크롤시 opacity 1->0 적용.
+// Home 섹션을 아래로 스크롤시 opacity 1->0 적용.**
 const home = document.querySelector(".home__container");
 const homeHeight = home.offsetHeight;
 document.addEventListener("scroll", () => {
   home.style.opacity = 1 - window.scrollY / homeHeight;
+});
+
+// Arrow up 홈이 아래로 50%내려 갔을때 나타나기**
+const arrowUp = document.querySelector(".arrow-up");
+document.addEventListener("scroll", () => {
+  if (window.scrollY > homeHeight / 2) {
+    arrowUp.style.opacity = 1;
+  } else {
+    arrowUp.style.opacity = 0;
+  }
 });
