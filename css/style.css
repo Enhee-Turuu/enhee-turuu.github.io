@@ -55,7 +55,7 @@ button {
 }
 
 button:focus {
-  outline: 1px solid var(--color-accent);
+  outline: 1px solid transparent;
 }
 
 /* Common */
@@ -113,13 +113,24 @@ button:focus {
   font-size: 1.8rem;
 }
 
+.header__toggle {
+  display: block;
+  color: var(--color-white);
+  position: absolute;
+  font-size: 1.5rem;
+  top: 1.3rem;
+  right: 1rem;
+}
+
 .header__menu {
   display: flex;
   gap: 4px;
 }
 
 .header__menu__item {
+  display: block;
   padding: 8px 16px;
+  border-bottom: 1px solid transparent;
 }
 
 .header__menu__item:hover {
@@ -468,7 +479,7 @@ button:focus {
 /* 반응 적용 */
 @media screen and (max-width: 768px) {
   .section {
-    padding: 3rem 2rem;
+    padding: 4rem 2rem;
     /* background-color: yellow; */
   }
 
@@ -486,10 +497,16 @@ button:focus {
   }
 
   .header__menu {
+    display: none;
     flex-direction: column;
     text-align: center;
-    padding: 1rem 4rem;
+    margin: 1rem 4rem;
     gap: 1rem;
+  }
+
+  .header__menu.open {
+    display: flex;
+    background-color: var(--color-primary);
   }
 
   .header__nav {
