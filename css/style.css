@@ -114,7 +114,7 @@ button:focus {
 }
 
 .header__toggle {
-  display: block;
+  display: none;
   color: var(--color-white);
   position: absolute;
   font-size: 1.5rem;
@@ -500,6 +500,15 @@ button:focus {
   .header {
     flex-direction: column;
     align-items: start;
+  }
+
+  .header__toggle {
+    display: block;
+    color: var(--color-white);
+    position: absolute;
+    font-size: 1.5rem;
+    top: 1.3rem;
+    right: 1rem;
   }
 
   .header__menu {
