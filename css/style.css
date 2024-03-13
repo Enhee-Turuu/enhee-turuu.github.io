@@ -3,7 +3,7 @@
   /* App Colors */
   --color-primary: var(--color-black);
   --color-primary-variant: var(--color-gray);
-  --color-accent: var(--color-blue);
+  --color-accent: var(--color-yellow);
   --color-accent-variant: var(--color-orange);
   --color-text: var(--color-white);
 
@@ -99,7 +99,7 @@ button:focus {
 
 .header--dark {
   background-color: var(--color-primary);
-  box-shadow: 0 25px 50px -12px #3b82f620;
+  box-shadow: 0 25px 50px -12px hsla(55, 98%, 82%, 0.125);
 }
 
 .header__logo {
