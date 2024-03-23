@@ -1,7 +1,7 @@
 "use strict";
 
 new TypeIt(".home__title__strong", {
-  loop: true,
+  loop: false,
   speed: 50,
 }) //Dream Coder|**
   .move(-11)
@@ -9,7 +9,7 @@ new TypeIt(".home__title__strong", {
   .pause(1000)
   .move(null, { to: "END" }) //Amazing Dream Coder|**
   .delete() //|
-  .type("Front-end Enginear") //Front-end Engineer|**
+  .type("Front-end Engineer") //Front-end Engineer|**
   .pause(1000)
   .move(-9) //Front-end| Engineer**
   .delete(9) //| Engineer**
