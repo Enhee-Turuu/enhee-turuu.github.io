@@ -1,7 +1,7 @@
 "use strict";
 
 new TypeIt(".home__title__strong", {
-  loop: false,
+  loop: true,
   speed: 50,
 }) //Dream Coder|**
   .move(-11)
